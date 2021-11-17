@@ -7,7 +7,10 @@ public class PrimeiroProgramaJava {
         Gato gato = new Gato();
         System.out.println(gato);
 
-        Livro livro1 = new Livro(nome:"O problebma dos 3 corpos", numPaginas: 300);
+        String nome = null;
+        Integer numPaginas = null;
+
+        Livro livro1 = new Livro("O problebma dos 3 corpos");
         System.out.println(livro1);
         //    int a = 5;
         //    int b = 3;
@@ -21,6 +24,9 @@ class Livro {
     public Livro(String nome, Integer numPaginas) {
         this.nome = nome;
         this.numPaginas = numPaginas;
+    }
+
+    public Livro(String nome) {
     }
 
     public String getNome() {
