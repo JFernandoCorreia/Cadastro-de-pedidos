@@ -14,11 +14,11 @@ public class PrimeiroProgramaJava {
         //    System.out.println("Hello World!" + "\n" + (a + b));
     }
 }
-class livro {
+class Livro {
     private String nome;
     private Integer numPaginas;
 
-    public livro(String nome, Integer numPaginas) {
+    public Livro(String nome, Integer numPaginas) {
         this.nome = nome;
         this.numPaginas = numPaginas;
     }
@@ -41,7 +41,7 @@ class livro {
 
     @Override
     public String toString() {
-        return "livro{" +
+        return "Livro{" +
                 "nome='" + nome + '\'' +
                 ", numPaginas=" + numPaginas +
                 '}';
