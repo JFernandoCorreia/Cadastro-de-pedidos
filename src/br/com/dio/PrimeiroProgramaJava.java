@@ -7,11 +7,43 @@ public class PrimeiroProgramaJava {
         Gato gato = new Gato();
         System.out.println(gato);
 
-
-
-
+        Livro livro1 = new Livro(nome:"O problebma dos 3 corpos", numPaginas: 300);
+        System.out.println(livro1);
         //    int a = 5;
         //    int b = 3;
         //    System.out.println("Hello World!" + "\n" + (a + b));
+    }
+}
+class livro {
+    private String nome;
+    private Integer numPaginas;
+
+    public livro(String nome, Integer numPaginas) {
+        this.nome = nome;
+        this.numPaginas = numPaginas;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getNumPaginas() {
+        return numPaginas;
+    }
+
+    public void setNumPaginas(Integer numPaginas) {
+        this.numPaginas = numPaginas;
+    }
+
+    @Override
+    public String toString() {
+        return "livro{" +
+                "nome='" + nome + '\'' +
+                ", numPaginas=" + numPaginas +
+                '}';
     }
 }

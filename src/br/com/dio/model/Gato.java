@@ -27,6 +27,18 @@ public class Gato {
         return idade;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
